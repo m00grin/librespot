@@ -19,6 +19,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [core] Made `SpotifyId::to_base62`, `SpotifyId::to_base16`, `FileId::to_base16`, `SpotifyUri::to_id`, `SpotifyUri::to_uri` infallible (breaking)
 
 ### Fixed
+
+- [core] Fixed AP login on Windows on ARM by using the supported desktop platform identifier
 - [audio] Fixed integer overflow in throughput calculation
 - [main] Fixed `--volume-ctrl fixed` not disabling volume control
 - [core] Fix default permissions on credentials file and warn user if file is world readable
